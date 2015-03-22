@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app" >
+
+    <RelativeLayout
+        android:id="@+id/springboard_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null" >
+
+        <com.jchun.mylauncher.widget.PageScrollView
+            android:id="@+id/pageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </com.jchun.mylauncher.widget.PageScrollView>
+
+        <com.jchun.mylauncher.widget.DotView
+            android:id="@+id/dotView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true" />
+
+        <RelativeLayout
+            android:id="@+id/touchController"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/panelMoving"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left|center"
+        android:background="@null"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+</FrameLayout>

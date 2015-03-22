@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.jchun.mylauncher.widget.FolderEditText
+        android:id="@+id/folder_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/folder_title_bg"
+        android:gravity="center"
+        android:textColor="@android:color/white" />
+
+    <com.jchun.mylauncher.widget.FolderScrollView
+        android:id="@+id/folder_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/folder_bg"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:id="@+id/folder_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </com.jchun.mylauncher.widget.FolderScrollView>
+
+</LinearLayout>
