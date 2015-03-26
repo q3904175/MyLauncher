@@ -266,7 +266,10 @@ public class MainActivity extends Activity {
     }
 
     public void scrollToLeft() {
-        getPage(selectedPageIndex, false).deselect();
+        IPageView page =getPage(selectedPageIndex, false);
+        if (page != null) {
+            page.deselect();
+        }
         if (--selectedPageIndex <= 1) {
             selectedPageIndex = 1;
         } 

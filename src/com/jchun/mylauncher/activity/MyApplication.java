@@ -8,9 +8,9 @@ public class MyApplication extends Application{
     public FinalBitmap fb;
     @Override
     public void onCreate() {
-        fb = FinalBitmap.create(this);
-        instacne = this;
         super.onCreate();
+        fb = FinalBitmap.create(getApplicationContext());
+        instacne = this;
     }
 
     public static MyApplication getInstance() {
