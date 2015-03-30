@@ -713,9 +713,6 @@ public class MainActivity extends Activity {
                 }
                 return true;
             case MotionEvent.ACTION_MOVE:
-                if ( x < ev.getX() && (!jma.isJiggling()) && (!mover.isMoving())) {
-                    return true;
-                }
                 int currentPointX = scrollContainer.getScrollX();
                 index = currentPointX / screenWidth;
                 currentPage = getPage(index, false);
